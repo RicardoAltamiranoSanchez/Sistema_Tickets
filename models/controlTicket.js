@@ -76,7 +76,7 @@ class Ticket{
    AtenderTicket(escritorio){
      //Verificamos si hay ticket en la cola
      if(this.tickets.length===0){ return null;}
-     ticket =this.tickets.shift();//es un metodo de javascript elimina el primer elemento de un arreglo y lo retorna
+    const ticket =this.tickets.shift();//es un metodo de javascript elimina el primer elemento de un arreglo y lo retorna
      ticket.escritorio=escritorio;//Asignamos el ticket al escritorio que indiquemos      
      this.ultimostickets.unshift(ticket);//Añadimos el ticket al arreglo es un metodo que añade un valor al inicio de un arreglo
     //Verificamos que solo sean 4 tickets para pode mostrar en la pantalla
