@@ -4,6 +4,7 @@ const etiquetaEscritorio=document.querySelector('h1');
 const botonSiguiente=document.querySelector('button');
 const etiquetaSmall=document.querySelector('small');
 const etiquetaClase=document.querySelector('.alert');
+const cola=document.querySelector('#lblPendientes');
 //Este nuevo metodo para buscar la ubicacion del escritorio mas bien el path de la url en donde estamos ubicados
 const searchParams= new URLSearchParams(window.location.search);
 //buscamos si estamos en el path de escritorio y el has es para buscar cualquier palabra que tenga escritorio mas bien que coninsida
@@ -32,6 +33,15 @@ socket.on('disconnect',()=>{
 botonSiguiente.disable=true;
 
 })
+socket.on('ticket-pendientes',(payload)=>{
+     if(payload===0){
+       // cola.style.display="none"; destivamos la pantalla pero lo dejare con un mensajito
+        cola.innerText="No hay Tickets que atender";
+    }else{
+         cola.style.display="";
+         cola.innerText=payload;
+     }  
+})
 
 
 
@@ -49,7 +59,7 @@ const{ok,msg,ticketcliente}=payload;
    
      //ponemos el ticket en la pantalla de escritorio
      etiquetaSmall.innerText="Ticket "+ticketcliente.numero;
-
+     
  
 })
 
