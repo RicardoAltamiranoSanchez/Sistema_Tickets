@@ -1,5 +1,5 @@
 {
-  "name": "08-websocket-server",
+  "name": "websocket-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "start": "node app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ricardo Altamirano Sanchez",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

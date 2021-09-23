@@ -1,0 +1,1 @@
+{"ultimo":0,"dia":22,"tickets":[],"ultimostickets":[]}
