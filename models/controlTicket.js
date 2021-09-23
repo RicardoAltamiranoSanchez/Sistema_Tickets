@@ -53,7 +53,7 @@ class Ticket{
     }
    guardarBaseDB(){
       //Construimos un path donde esta nuestra base de datos para poder modifcarla cuando no este bien dal fecha
-      const nuevoPath=path.join( __dirname,'../websocket-serve/DB/db.json');
+      const nuevoPath=path.join( __dirname,'../../DB/db.json');
       console.log("El path de esta madre "+nuevoPath);
       //Aqui modificamos nuestra base de datos con los parametro de nuestro objeto ticket
        //este es el metodo para poder modificar la base de datos con fs ponemos primero el path y despues los datos que vamos a modificar
