@@ -40,7 +40,7 @@ class Ticket{
      //Aqui iniciamos nuestro objetos
     init(){
      //Capturamos la base de datos por el momento solo es una base de datos tipo archivo json
-      const {ultimo,dia,tickets,ultimostickets}=require('../../DB/db.json');
+      const {ultimo,dia,tickets,ultimostickets}=require('../DB/db.json');
       if(dia===this.dia){
        this.ultimo=ultimo;
        this.tickets=tickets;
