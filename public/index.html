@@ -6,38 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Serviodor Sockets</title>
+   <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/estilo.css" as="style">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 
 <body class="container">
-    <h1 class="mt-5">Programa de Tickets</h1>
+   <header> <h1 class="titulo">Programa de Tickets</h1></header>
+    <main>
+    <section>
+            
+                <form  class="formulario" action="escritorio.html">
+                    <fieldset>
+                        <div class="contenedor-campo">
+                            <div class="campo">
+                                <input name="escritorio" 
+                                type="text" 
+                                class="form-control" 
+                                placeholder="Escritorio" 
+                                autofocus 
+                                required>
+                            </div>
+                            <div class="campo">
+                                <button type="submit" class="btn btn-primary">
+                                    Ingresar
+                                </button>
+        
+                            </div>
+                            <div class="campo">
+                                <a class="btn btn-primary" href="publico.html">Pantalla publica</a>
+                            </div>
+                            <div class="campo">
+                                <a class="btn btn-secondary" href="nuevo-ticket.html">Crear Tickets</a>
+                            </div>
 
-    <div class="row">
-        <div class="col-6">
-
-            <a class="btn btn-primary" href="publico.html">Pantalla publica</a>
-            <a class="btn btn-secondary" href="nuevo-ticket.html">Crear Tickets</a>
-
-        </div>
-
-        <div class="col-6">
-            <form action="escritorio.html">
-
-                <input name="escritorio" 
-                       type="text" 
-                       class="form-control" 
-                       placeholder="Escritorio" 
-                       autofocus 
-                       required>
-
-                <br>
-                <button type="submit" class="btn btn-primary">
-                    Ingresar
-                </button>
-            </form>
-        </div>
-    </div>
+                        </div>
+                       
+                    </fieldset>
+                </form>
+    </section>
+</main>
+    <footer class="pie">
+        <h5>Desarrollador Ricardo Altamirano Sanchez ©</h5>
+    </footer>
+</body>
 
 </body>
 
